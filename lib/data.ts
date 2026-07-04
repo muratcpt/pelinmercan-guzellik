@@ -1,0 +1,197 @@
+export const SALON = {
+  name: "Pelin Mercan Estetik ve Güzellik",
+  shortName: "Pelin Mercan",
+  phone: "0531 720 86 55",
+  phoneRaw: "+905317208655",
+  whatsapp: "https://wa.me/905317208655",
+  address:
+    "İsmetpaşa Mah. Emile Vitalis Sk. Zekeriya Koyuncu Apt. No:5 Kat:3 D:7, 17010 Çanakkale Merkez/Çanakkale",
+  addressShort: "İsmetpaşa, Çanakkale Merkez",
+  instagram: "https://www.instagram.com/pelinmercan.guzellik/",
+  facebook: "https://www.facebook.com/61573150504575/",
+  googleMapsUrl:
+    "https://www.google.com/maps/place/Pelin+Mercan+Estetik+ve+G%C3%BCzellik/@40.1466157,26.4106695,17z/data=!3m1!4b1!4m6!3m5!1s0x14b1a94beacee3c1:0xd3cb2a7b32d17cde!8m2!3d40.1466157!4d26.4106695",
+  rating: 4.7,
+  reviewCount: 24,
+  hours: {
+    weekdays: "09:00 – 20:00",
+    saturday: "09:00 – 20:00",
+    sunday: "Kapalı",
+  },
+  geo: { lat: 40.1466157, lng: 26.4106695 },
+};
+
+// Her hizmet: id=slug, name, shortDesc (kart), desc (detay), icon (emoji),
+// popular/new (rozet), category, duration. Fiyat yok (kullanıcı istemedi).
+export const SERVICES = [
+  {
+    id: "hydrafacial-mercan-peeling",
+    slug: "hydrafacial-mercan-peeling",
+    name: "Hydrafacial + Mercan Peeling",
+    shortDesc: "Çanakkale'de ilk ve tek! 14 aşamalı cilt yenileme",
+    desc: "14 aşamalı Hydrafacial cilt bakımı ve imzamız Mercan Peeling bir arada. Sivilce, akne ve cilt lekelerinde ilk seansta belirgin azalma sağlayan, Çanakkale'de yalnızca salonumuza özel imza bakımı.",
+    icon: "✨",
+    popular: true,
+    new: true,
+    category: "cilt",
+    duration: "60-90 dk",
+    image: "/images/service-hydrafacial.jpg",
+  },
+  {
+    id: "lazer-epilasyon",
+    slug: "lazer-epilasyon",
+    name: "Lazer Epilasyon",
+    shortDesc: "Güvenli ve etkili kalıcı tüy azaltma yöntemi",
+    desc: "Cilt tipinize özel enerji ayarlarıyla, hijyenik ve profesyonel uygulama ile tüm vücutta kalıcı tüy azaltma.",
+    icon: "🔆",
+    popular: true,
+    category: "epilasyon",
+    duration: "15-60 dk",
+    image: "/images/service-lazer.jpg",
+  },
+  {
+    id: "akne-leke-tedavisi",
+    slug: "akne-leke-tedavisi",
+    name: "Akne & Leke Tedavisi",
+    shortDesc: "Sivilce izi ve cilt lekelerinde profesyonel çözüm",
+    desc: "Akne, sivilce izi (scar) ve cilt lekelerine yönelik kişiye özel bakım protokolü ile daha pürüzsüz, fondötensiz gezilebilen bir cilt.",
+    icon: "🌿",
+    popular: true,
+    category: "cilt",
+    duration: "45-60 dk",
+    image: "/images/service-cilt-bakimi.jpg",
+  },
+  {
+    id: "bolgesel-incelme",
+    slug: "bolgesel-incelme",
+    name: "Bölgesel İncelme & Zayıflama",
+    shortDesc: "İstediğiniz bölgede sıkılaştırma ve inceltme",
+    desc: "Profesyonel cihazlarla desteklenen seans programıyla bölgesel yağ azaltma, sıkılaştırma ve vücut şekillendirme.",
+    icon: "💫",
+    category: "vucut",
+    duration: "45-60 dk",
+    image: "/images/service-zayiflama.jpg",
+  },
+  {
+    id: "ipek-kirpik",
+    slug: "ipek-kirpik",
+    name: "İpek Kirpik",
+    shortDesc: "Gözlerinizi daha büyük ve çekici gösterir",
+    desc: "Göz şeklinize özel tasarlanan ipek kirpik uygulaması ile maskarasız bile bakımlı, dramatik bakışlar.",
+    icon: "👁️",
+    popular: true,
+    category: "kirpik",
+    duration: "90-120 dk",
+    image: "/images/service-ipek-kirpik.jpg",
+  },
+  {
+    id: "kirpik-lifting",
+    slug: "kirpik-lifting",
+    name: "Kirpik Lifting",
+    shortDesc: "Doğal kirpiklerinizi kıvırır ve belirginleştirir",
+    desc: "Kendi kirpiklerinizi yukarı kıvıran, haftalarca kalıcı doğal kıvırma uygulaması.",
+    icon: "✨",
+    category: "kirpik",
+    duration: "60 dk",
+    image: "/images/gallery-kirpik.jpg",
+  },
+  {
+    id: "protez-tirnak",
+    slug: "protez-tirnak",
+    name: "Protez Tırnak",
+    shortDesc: "Uzun süre kalıcı, zarif ve güçlü tırnaklar",
+    desc: "Almond, oval, kare formlarda; şeffaf, ombre veya renkli tasarımlarla protez tırnak uygulaması.",
+    icon: "💅",
+    popular: true,
+    category: "tirnak",
+    duration: "90-120 dk",
+    image: "/images/gallery-tirnak.jpg",
+  },
+  {
+    id: "manikur",
+    slug: "manikur",
+    name: "Manikür",
+    shortDesc: "Bakımlı eller, özenli tırnak bakımı",
+    desc: "Tırnak bakımı, şekillendirme, kutikül temizliği ve kalıcı oje uygulaması ile özenli el bakımı.",
+    icon: "🤍",
+    category: "tirnak",
+    duration: "45-60 dk",
+    image: "/images/service-manikur.jpg",
+  },
+  {
+    id: "kas-tasarimi",
+    slug: "kas-tasarimi",
+    name: "Kaş Tasarımı & Şekillendirme",
+    shortDesc: "Yüzünüze en yakışan kaş formu",
+    desc: "Yüz hatlarınıza özel analiz edilerek ip veya pens tekniğiyle milimetrik hassasiyette kaş şekillendirme.",
+    icon: "✏️",
+    category: "kas",
+    duration: "20-30 dk",
+    image: "/images/service-kas.jpg",
+  },
+  {
+    id: "kas-laminasyonu",
+    slug: "kas-laminasyonu",
+    name: "Kaş Laminasyonu",
+    shortDesc: "Kaşlarınıza doğal ve dolu görünüm",
+    desc: "Kaş tellerini yukarı doğru düzenleyerek dolgun, şekilli ve bakımlı bir görünüm kazandırır.",
+    icon: "🌸",
+    category: "kas",
+    duration: "45-60 dk",
+    image: "/images/service-kas.jpg",
+  },
+];
+
+export const NAV_LINKS = [
+  { href: "/", label: "Ana Sayfa" },
+  { href: "/hakkimizda", label: "Hakkımızda" },
+  { href: "/hizmetler", label: "Hizmetlerimiz" },
+  { href: "/galeri", label: "Galeri" },
+  { href: "/iletisim", label: "İletişim" },
+];
+
+// Gerçek (fb.com/61573150504575 sayfasından) ve üretilen görsellerin karışımı.
+export const GALLERY = [
+  { image: "/images/gallery-before-after.jpg", label: "Cilt Yenileme Sonucu", tag: "cilt", big: true },
+  { image: "/images/gallery-hydrafacial-uygulama.jpg", label: "Hydrafacial Uygulaması", tag: "cilt" },
+  { image: "/images/gallery-tirnak.jpg", label: "Protez Tırnak Tasarımı", tag: "tirnak" },
+  { image: "/images/gallery-kirpik.jpg", label: "İpek Kirpik Sonucu", tag: "kirpik", big: true },
+  { image: "/images/gallery-cilt-bakimi.jpg", label: "Cilt Bakımı", tag: "cilt" },
+  { image: "/images/gallery-volume-kirpik.jpg", label: "Volüm Kirpik", tag: "kirpik" },
+  { image: "/images/gallery-salon-oda.jpg", label: "Salonumuzdan Bir Kare", tag: "salon" },
+  { image: "/images/service-lazer.jpg", label: "Lazer Epilasyon Uygulaması", tag: "epilasyon" },
+];
+
+// Gerçek Google Haritalar yorumları (birebir).
+export const TESTIMONIALS = [
+  {
+    name: "Yarenur Akdemir",
+    text: "Pelin Hanım'a uzun süredir lazer epilasyon işlemi için gidiyorum. Hijyen ve profesyonellik konusunda çok rahat hissettiğim bir yer. Gönül rahatlığıyla önerebilirim 🌸💖",
+    services: "Lazer Epilasyon",
+    rating: 5,
+  },
+  {
+    name: "Selinay Ari",
+    text: "Pelin Hanım'a tepeden tırnağa lazere geliyorum. Pelin hanım ve çalışanları güler yüzlü ve işini titizlikle yapıyorlar, çok memnunum; saatin nasıl geçtiğini anlayamıyorum oraya gittiğimde. İlgi ve alakanız ve profesyonelliğiniz için teşekkürler..🌸🧚✨",
+    services: "Lazer Epilasyon",
+    rating: 5,
+  },
+  {
+    name: "Öznur Meriç",
+    text: "Pelin Mercan güzellik salonunda yaptırmış olduğum akne ve scar tedavisinden çok memnun kaldım. Pelin Hanım bu konuda gerçekten çok profesyonel, sayesinde artık fondötensiz gezebiliyorum ❤️",
+    services: "Akne & Leke Tedavisi",
+    rating: 5,
+  },
+  {
+    name: "Nuray Keskin",
+    text: "Pelin Hanım'a bir süredir zayıflama işlemi için gidiyorum ve çok memnunum. Seanslarım henüz bitmedi fakat şimdiden sonuçlardan gayet memnunum.",
+    services: "Bölgesel İncelme",
+    rating: 5,
+  },
+];
+
+export const TIME_SLOTS = [
+  "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30",
+  "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30",
+];
+export const SUNDAY_TIME_SLOTS: string[] = [];
