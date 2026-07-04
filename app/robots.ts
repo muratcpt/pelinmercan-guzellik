@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: [],
     },
-    sitemap: "https://pelinmercan-guzellik.vercel.app/sitemap.xml",
+    sitemap: "https://pelinmercan.vercel.app/sitemap.xml",
   };
 }

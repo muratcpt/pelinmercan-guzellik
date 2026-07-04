@@ -24,7 +24,7 @@ const greatVibes = Great_Vibes({
   weight: "400",
 });
 
-const BASE_URL = "https://pelinmercan-guzellik.vercel.app";
+const BASE_URL = "https://pelinmercan.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

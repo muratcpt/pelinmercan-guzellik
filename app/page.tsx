@@ -21,7 +21,7 @@ const jsonLd = {
   "@type": "BeautySalon",
   name: SALON.name,
   image: "/images/hero-bg.jpg",
-  url: "https://pelinmercan-guzellik.vercel.app",
+  url: "https://pelinmercan.vercel.app",
   description:
     "Çanakkale'de Hydrafacial + Mercan Peeling, lazer epilasyon, akne ve leke tedavisi, bölgesel incelme, ipek kirpik, kirpik lifting, protez tırnak, manikür ve kaş tasarımı hizmetleri sunan güzellik salonu.",
   telephone: SALON.phoneRaw,
